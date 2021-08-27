@@ -5,7 +5,7 @@ open `.env` file and add your client_id from spotify dashboard and then open ter
 ```js
 1. npm install
 2. yarn install
-3. npm run serve
+3. yarn start
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
