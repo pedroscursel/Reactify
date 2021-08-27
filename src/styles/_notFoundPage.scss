@@ -1,0 +1,13 @@
+.not-found-page{
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  h1{
+    color: #fafafa;
+    a{
+      color: #999999;
+    }
+  }
+}

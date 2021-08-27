@@ -1,0 +1,76 @@
+.errorMsg {
+  font-size: 14px;
+  color: #fafafa;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  align-self: center;
+}
+
+.search-form {
+  display: flex;
+  grid-area: search-form;
+  margin: 80px 0 50px 0;
+  form {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    .form-group{
+      width: 100%;
+      margin-bottom: 0;
+      grid-area: searchBar;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      label{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: left;
+        color: #999999;
+        margin-bottom: 15px;
+      }
+      input{
+        width: 100%;
+        border: none;
+        background: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        text-align: left;
+        color: #999999;
+        &::placeholder{
+          font-family: 'Roboto', sans-serif;
+          font-weight: 800;
+          font-size: 48px;
+          text-align: left;
+          color: #999999;
+        }
+        &:focus{
+          outline: none;
+          color: #fafafa;
+          box-shadow: none;
+        }
+        &[type=search]::-ms-clear,
+        &[type=search]::-ms-reveal { display: none; width :0; height: 0; }
+        &[type="search"]::-webkit-search-decoration,
+        &[type="search"]::-webkit-search-cancel-button,
+        &[type="search"]::-webkit-search-results-button,
+        &[type="search"]::-webkit-search-results-decoration { display: none; }
+
+      }
+      &::after{
+        content: '';
+        width: calc(100% + 7px);
+        height: 2px;
+        bottom: 0;
+        left: -7px;
+        background: #999999;
+        position: absolute;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.search-results{
+  min-height: calc(100vh - 386px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  h2{
+    line-break: auto;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fafafa;
+    margin: 7px 0;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .albums,
+  .artists,
+  .tracks {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+    .item{
+      .cover{
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding-bottom: 100%;
+        width: 100%;
+        &:hover,
+        &:focus,
+        &:active{
+          outline: none !important;
+          box-shadow: none !important;
+          border: none !important;
+        }
+      }
+      div{
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        h3{
+          line-break: auto;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fafafa;
+          margin: 15px 0 7px;
+        }
+        p{
+          font-size: 16px;
+          margin: 0;
+          color: #999999;
+        }
+      }
+    }
+  }
+  .load-more {
+    margin: 25px 0 50px;
+    grid-area: more;
+    text-align: center;
+  }
+}

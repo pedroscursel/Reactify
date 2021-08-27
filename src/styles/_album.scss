@@ -1,0 +1,95 @@
+.album{
+  grid-area: wrap;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-areas:  'voltar .'
+                        'capa faixas';
+  gap: 50px;
+  margin-top: 80px;
+  .voltar{
+    grid-area: voltar;
+    background: none;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999999;
+    border: none;
+    width: fit-content;
+    &:hover,
+    &:focus,
+    &:active{
+      outline: none !important;
+      box-shadow: none !important;
+      background: none !important;
+      border: none !important;
+    }
+  }
+  .capa{
+    grid-area: capa;
+    max-width: 75%;
+    img{
+      width: 100%;
+      margin-top: 10px;
+    }
+    h2{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: #fafafa;
+      margin: 12px 0;
+    }
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #999999;
+      margin: 12px 0;
+    }
+  }
+  .faixas{
+    grid-area: faixas;
+    width: 100%;
+    tr{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      td{
+        display: block;
+        &:nth-child(1){
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: left;
+          color: #999999;
+          margin: 0;
+          width: 40px;
+        }
+        &:nth-child(2){
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: left;
+          color: #fafafa;
+          margin: 0;
+          width: calc(100% - 80px);
+        }
+        &:nth-child(3){
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: left;
+          color: #999999;
+          margin: 0;
+          width: 40px;
+        }
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
